@@ -1,3 +1,9 @@
+# Markdown 작성법
+
+## 1. Heading에 대해서 
+
+<br/>
+
 <!-- Heading -->
 # Heading 1
 - Heading 1 아래에는 수평선이 자동으로 추가 된다.
@@ -67,10 +73,10 @@ Click [here](https://github.com/)
 
 <!-- Code -->
 
-To print message in the console, use 'console.log('your message')' and..
+To print message in the console, use `console.log(`your message`)` and..
 
 ```js
- console.log('your message');
+ console.log(`your message`);
 ```
 
 - 다음은 개발자들을 위한 코드인데 문서 안에서 특정한 코드를 보여 주고 싶다면 텍스트 형태로 적기보다는 `(백틱)을 이용해서 감싸주면 인라인 형태로 포멧이 가능하다.
@@ -81,3 +87,140 @@ To print message in the console, use 'console.log('your message')' and..
 
 - 깃허브에서 다음과 같은 것을 지원하며 기존 Markdown에서 크게 변형 되지 않았는데 한가지 재미이쓴것은 task Lists 목록을 추가 할 수가 있다. 
 - 또한 이미지를 수정할 때 일관된 사이즈로 html 언어로 작성하면 가능해진다. (width = 400)
+
+___
+<br/>
+
+# 마크다운 문법 학습하기 <실전으로 작성하는 연습>
+<h1></h1>
+제목 1
+======
+
+제목 2
+------
+
+
+## 마크다운 소개
+
+<h2><h2/>
+
+## 마크다운 문법
+
+### 제목 
+
+
+<u>밑줄</u> = underline
+
+**_이텔릭체_ 와 두껍게**
+
+*동해물*과 **백두산**이 ~~마르고~~ <u style="color: red;">닳도록</u>
+<!-- 추천하지않는 컬러 넣는법이다. -->
+
+
+ol = 순서가 필요한 목록 = 1. 2. 3. 4. 5. 
+ul = - 
+
+<!-- 순서가 있는 목록 ( ol tag) -->
+
+#### 라면 끓이는 법
+
+1. 라면을 구입해야한다.
+2. 물을 끓인다.
+3. 라면을 넣는다.
+4. 맛있게 끓인다.
+5. 맛있게 먹는다.
+
+#### 과일 목록
+
+- 사과
+- 파인애플
+- 딸기 
+- 오렌지
+- 망고
+
+
+
+<h4> 라면 끌히은 법 </h4>
+
+<ol>
+<li> 1. 라면을 구입해야 한다. </li>
+</ol>
+
+<h4> 과일 목록 </h4>
+<ul>
+<li> 사과 </li>
+</ul>
+
+
+저는 [velog](https://www.naver.com)를 운영하고 있습니다.
+
+[구글][go]
+
+하단에다가  참조링크를 만들어 준다.
+
+아랫쪽에 선언해 놓은 곳으로 갈 수있다. 
+
+[go]:(https://www.naver.com)
+
+새로운 탭에 띄울것이냐 아니냐 에 대한것은 마크다운 지원 안해주기떄문에 이것음 a 태그 사용해야한다
+
+<a href="https://google.com" target="_blank">구글</a>
+
+
+
+
+저는 `background` 속성과 `position: absolute;` 를 적용하니까 잘 되더라고요~
+
+```html
+<div id="markdow" style="color: red;">
+</div>
+
+```
+
+```js
+function hello() {
+    return hello();
+}
+```
+
+
+position의 값
+
+| 값 | 의미
+|:---:|:---:|
+`relative` | 자신의 기준으로 배치
+`absolute` | 부모 요소를 기준으로 배치
+`fixed` | **브라우저 창**을 기준으로 배치
+
+
+> 인용문
+
+>1
+>>2
+>>>3
+>>>>4
+>>>>>5
+>>>>>>6
+>>>>>>>7
+>>>>>>>>8
+>>>>>>>>>9
+>>>>>>>>>>10
+>>>>>>>>>>>11
+>>>>>>>>>>>>12
+>>>>>>>>>>>>>13
+>>>>>>>>>>>>>>14
+
+raw html도 마크다운 문법과 같이 사용이가능하다. 
+
+
+<blockquote>raw html도 마크다운 문법과 같이 사용이가능하다.  </blockquote>
+
+
+
+---
+***
+____
+
+동해물과 백두산이  
+마르고닮도록 우리나라 만세  
+<!-- 띄어쓰기 2번으로 줄바꿈가능하다. -->
